@@ -1,0 +1,254 @@
+<html lang="pt">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+  <link rel="shortcut icon" href="img\fav.png" type="image/x-icon"/>
+
+    <title>estereótipo | Giovanna Gomes</title>
+</head>
+<body>
+  <script src="Scripts/jquery-3.3.1.min.js"></script>
+  <link href="Scripts/bootstrap.css" rel="stylesheet" />
+  <script src="Scripts/bootstrap.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+
+<div class="container">
+
+  <!-- brand -->
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-light">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="trabalhos.html">giovanna gomes</a>
+    </div>
+
+  <!-- navegação -->
+  <div class="dropdown" onclick="myFunction(this)">
+    <span >
+      <div class="container-bar" >
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+      </div>
+    </span>
+    <div class="dropdown-content">
+      <ul >
+        <li><a class="description__link" href="index.html" >index</a></li>
+        <li><a class="description__link" href="trabalhos.html" style="color: #4595F7;">trabalhos</a></li>
+        <li><a class="description__link" href="sobre.html">sobre</a></li>
+        <li><a class="description__link" href="contato.html">contato</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+<!-- header -->
+<div class="main">
+  <h2 name="1" id="1" style="color:rgba(94,93,93,0.4); font-size:20pt; text-align:left; "><strong>estereótipo</strong></h2>
+  <p class="trab description__link" style="color:#88ccf1">tipo:<br><a style="cursor:auto;" href="" >trabalho acadêmico</a></p>
+  <p>Esteriótipo é uma revista que aborda assuntos de <br>
+    interesse para jovens das periferias de São Paulo.</p>
+</div>
+
+<!-- corpo -->
+
+<img src="img\Esteriotipo\VisualisaçãoEsteriotipo.png">
+
+
+<!-- paginação -->
+<a class="ante trab description__link" href="InstaGru.html">anterior</a>
+<a class="topo trab description__link" href="#1">topo</a>
+<a class="prox trab description__link" href="tourada.html">próximo</a>
+
+<footer class="footer" style=" margin-top:30px; padding-bottom: 20px; color: rgba(94,93,93,0.6);"> .design .código: Giovanna Gomes 2020 &copy;</footer>
+
+
+</div>
+
+<style>
+/*topo*/
+.main{
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+}
+
+
+img{
+  padding-top: 35px;
+  width:100%;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+p{
+  text-align: left;
+  justify-self: center;
+  align-self: center;
+}
+
+h1{
+  vertical-align: middle;
+  padding-top: 0px;
+  text-align: left;
+}
+
+/*botões*/
+.trab{
+text-decoration: none;
+transition: color .3s;
+transition-property: color;
+transition-duration: 0.3s;
+transition-timing-function: initial;
+transition-delay: initial;
+}
+
+.trab:hover{
+  outline-width: 0;
+}
+
+.description__link:hover:after {
+    transform: scaleX(0);
+    background-color: #ffb8d1;
+}
+
+
+.description__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(1) ;
+    transform-origin: center;
+    transition: transform .31s cubic-bezier(.23,1,.32,1);
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration:none;
+    color: rgba(94,93,93,1);
+}
+
+
+/*paginação*/
+.ante{
+  top: 30px;
+  position: relative;
+  right: -40px;
+}
+
+.prox{
+  top: 30px;
+  position: relative;
+  left: 85%;
+}
+
+.topo{
+  top: 30px;
+  position: relative;
+  left: 45%;
+}
+
+
+/*navegação*/
+li{
+  list-style-type: none;
+  font-size: 16pt;
+
+}
+
+.description__link:hover:after {
+    transform: scaleX(0);
+    background-color: #4595F7;
+}
+
+a:not(.link-thick):not(.btn):not(.mejs-horizontal-volume-slider):not(.thumb) {
+    display: inline-block;
+}
+
+.description__link:after {
+    content: "";
+    display:block;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(1) ;
+    transform-origin: center;
+    transition: transform .31s cubic-bezier(.23,1,.32,1);
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration:none;
+    color: rgba(94,93,93,1);
+}
+
+.container-bar {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 12px 0;
+  transition: 0.4s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    right: 10%;
+}
+
+.dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    padding: 12px;
+    z-index: 1;
+
+}
+
+
+
+
+.change .dropdown {
+    display: block;
+
+}
+
+.change .dropdown-content {
+    display: block;
+    background-color: rgba(256,256,256,0.9);
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+    transform: rotate(-45deg) translate(-3px, 3px);
+    background-color: #4595F7;
+
+}
+
+
+.change .bar2 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #4595F7;
+
+}
+</style>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+</body>
+</html>

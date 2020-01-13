@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'datalegreyathin';
+    src: url('Datalegreya-Thin-webfont.eot');
+    src: url('Datalegreya-Thin-webfont.eot?#iefix') format('embedded-opentype'), url('Datalegreya-Thin-webfont.woff2') format('woff2'), url('Datalegreya-Thin-webfont.woff') format('woff'), url('Datalegreya-Thin-webfont.ttf') format('truetype'), url('Datalegreya-Thin-webfont.svg#datalegreyathin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'datalegreyathin';
+    font-size: 32pt;
+    padding-top: 50px;
+    color: rgba(94,93,93,);
+}
+
+.navbar-brand {
+    font-family: 'datalegreyathin';
+    font-size: 24pt;
+}
+
+.bg-light {
+    background-color: #FFFFFF !important;
+}
+
+.navbar{
+    padding-top: 20px;
+    background-color: white;
+}
+
+
+li{
+  padding-right: 25px;
+}
+
+.footer{
+  text-align: center;
+  padding-top: 25px;
+  font-size: 10pt;
+  bottom: 0px;
+}
+
+a{
+    font-size: 10pt;
+    text-decoration: none;
+    color: rgba(0,0,0,.5);
+  }
+
+  a:-webkit-any-link {
+      color: -webkit-link;
+      cursor: pointer;
+      text-decoration: none;
+      color: rgba(94,93,93,1);
+  }
+
+
+p{
+  font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
+  font-size: 16px;
+  color: rgba(94,93,93,1);
+}
+
+
+
+
+
+.rolagem{
+  position: relative;
+  width: 1px;
+  height: 4000px;
+}
